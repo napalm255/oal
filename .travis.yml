@@ -20,7 +20,6 @@ deploy:
   true:
     condition: $TOXENV == py27
     repo: napalm255/oal
-    tags: true
 env:
 - TOXENV=py35
 - TOXENV=py34
