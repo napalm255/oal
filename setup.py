@@ -11,7 +11,9 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0',
+    'click==6.6',
+    'ipaddress==1.0.17',
+    'requests==2.11.1',
     # TODO: put package requirements here
 ]
 
