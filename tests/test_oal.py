@@ -6,7 +6,7 @@
 import pytest
 from contextlib import contextmanager
 from click.testing import CliRunner
-from oal.oal import cli
+from oal.__main__ import cli
 
 
 class TestOal(object):
@@ -19,10 +19,10 @@ class TestOal(object):
         runner = CliRunner()
         result = runner.invoke(cli)
         assert result.exit_code == 0
-        assert 'oal.cli' in result.output
+        assert 'Office 365' in result.output
         help_result = runner.invoke(cli, ['--help'])
         assert help_result.exit_code == 0
-        assert '--help  Show this message and exit.' in help_result.output
+        assert 'Show this message and exit.' in help_result.output
 
     def test_something(self):
         pass
