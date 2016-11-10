@@ -14,7 +14,7 @@ __title__ = 'Office 365 Address Lists'
 __summary__ = 'Office 365 Address Lists'
 __uri__ = 'https://github.com/napalm255/Office 365 Address Lists'
 
-__version__ = '__version__ = '0.2.1''
+__version__ = '0.2.1'
 
 __author__ = 'Brad Gibson'
 __email__ = 'napalm255@gmail.com'
