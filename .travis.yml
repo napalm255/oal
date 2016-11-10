@@ -17,9 +17,9 @@ deploy:
   distributions: sdist bdist_wheel
   provider: pypi
   user: napalm255
-  true:
+  on:
+    branch: master
     condition: $TOXENV == py27
-    repo: napalm255/oal
 env:
 - TOXENV=py35
 - TOXENV=py34
