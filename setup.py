@@ -23,7 +23,7 @@ test_requirements = [
 
 setup(
     name='oal',
-    version='0.1.0',
+    version='0.1.1',
     description="Office 365 Address Lists",
     long_description=readme + '\n\n' + history,
     author="Brad Gibson",
@@ -57,6 +57,6 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
-    test_suite='crap',
+    test_suite='tests',
     tests_require=test_requirements
 )
