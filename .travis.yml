@@ -19,7 +19,6 @@ deploy:
   user: napalm255
   on:
     branch: master
-    condition: $TOXENV == py27
 env:
 - TOXENV=py35
 - TOXENV=py34
