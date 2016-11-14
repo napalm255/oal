@@ -8,10 +8,25 @@ Primary module.
 from __future__ import absolute_import, print_function
 import logging
 from xml.etree import ElementTree
+import sys
 import re
-import requests
 import ipaddress
+import requests
 from oal.log import configure_logging
+
+
+if sys.version_info < (3,):
+    import codecs
+
+    def u(x):
+        """Unicode function."""
+        # pylint: disable = invalid-name
+        return codecs.unicode_escape_decode(x)[0]
+else:
+    def u(x):
+        """Unicode function."""
+        # pylint: disable = invalid-name
+        return x
 
 
 class Office365Config(object):
@@ -84,9 +99,9 @@ class Office365AddressList(object):
             if addr_list in address_list.attrib['type'].lower():
                 for addy in address_list:
                     if 'ipv4' in addr_list:
-                        addr.append(ipaddress.IPv4Network(unicode(addy.text)))
+                        addr.append(ipaddress.IPv4Network(u(addy.text)))
                     elif 'ipv6' in addr_list:
-                        addr.append(ipaddress.IPv6Network(unicode(addy.text)))
+                        addr.append(ipaddress.IPv6Network(u(addy.text)))
                     elif 'url' in addr_list:
                         addr.append(addy.text)
 
