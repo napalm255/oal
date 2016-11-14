@@ -78,6 +78,8 @@ def cli(ctx=None, debug=False, mini=False, urls=False, ipv4=False,
     if checkpoint is True:
         header(('Unique IPv4 as a Checkpoint dbedit script: '
                 '(%s)' % (office.checkpoint_count)))
+        click.echo('# Copy output to management server.')
+        click.echo('# dbedit -local -f /some_path_to_file/network_script.txt.')
         for address in office.checkpoint:
             click.echo(address)
         click.echo('update_all')
