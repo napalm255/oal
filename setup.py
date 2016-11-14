@@ -23,7 +23,7 @@ test_requirements = [
 
 setup(
     name='oal',
-    version='0.3.0',
+    version='0.3.1',
     description="Office 365 Address Lists",
     long_description=readme + '\n\n' + history,
     author="Brad Gibson",
