@@ -1,4 +1,4 @@
-astroid==1.4.8
+astroid==1.4.9
 bumpversion==0.5.3
 flake8==3.2.1
 isort==4.2.5
