@@ -11,4 +11,4 @@ pyflakes==1.5.0
 pylint==1.6.4
 pytest==3.0.5
 six==1.10.0
-wrapt==1.10.8
+wrapt==1.10.9
