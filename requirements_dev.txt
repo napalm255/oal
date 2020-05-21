@@ -10,5 +10,5 @@ pydocstyle==2.0.0
 pyflakes==1.5.0
 pylint==1.7.1
 pytest==3.0.7
-six==1.10.0
+six==1.15.0
 wrapt==1.10.10
